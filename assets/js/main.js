@@ -199,8 +199,14 @@ var settings = {
 						$img = $slide.find('img');
 
 					// Slide.
+				               var imageSrc = $img.attr('src');
+				               if(window.matchMedia("(max-width:  1100px)").matches){
+						  var parts = imageSrc.split(".")
+						  imageSrc = parts[0] + "-small." + parts[1];
+						}
+				 
 						$slide
-							.css('background-image', 'url("' + $img.attr('src') + '")')
+							.css('background-image', 'url("' + imageSrc + '")')
 							.css('background-position', ($slide.data('position') ? $slide.data('position') : 'center'));
 
 					// Add to slides.
