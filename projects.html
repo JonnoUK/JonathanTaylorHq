@@ -27,6 +27,17 @@
 		<meta name="msapplication-TileColor" content="#ffffff">
 		<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
 		<meta name="theme-color" content="#ffffff">
+		<!-- MailerLite Universal -->
+		<script>
+		(function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){
+		var c={ a:arguments,q:[]};var r=this.push(c);return "number"!=typeof r?r:f.bind(c.q);}
+		f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||f.q;r=a.createElement(i);
+		var _=a.getElementsByTagName(i)[0];r.async=1;r.src=l+'?v'+(~~(new Date().getTime()/1000000));
+		_.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
+
+		var ml_account = ml('accounts', '1720044', 'x9x3x8h8q2', 'load');
+		</script>
+		<!-- End MailerLite Universal -->
 	</head>
 	<body>
 
@@ -42,6 +53,7 @@
 					<li><a href="index.html">Home</a></li>
 					<li><a href="contact.html">Contact</a></li>
 					<li><a href="projects.html">Projects</a></li>
+					<li><a href="#" onclick="ml_account('webforms', '1553230', 'w7j3i5', 'show')">Get Updates</a></li>
 					<!--<li><a href="elements.html">Producing</a></li>
 					<li><a href="elements.html">Photography & Design</a></li>\
 					<li><a href="elements.html">Technical Experience</a></li>-->
