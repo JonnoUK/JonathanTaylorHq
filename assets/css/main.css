@@ -4067,7 +4067,7 @@
 			z-index: 2;
 		}
 
-		/*.banner .indicators {
+		.banner .indicators {
 			bottom: 1.5em;
 			left: 0;
 			list-style: none;
@@ -4106,7 +4106,7 @@
 
 				.banner .indicators li.visible:before {
 					background: #fff;
-				}*/
+				}
 
 		.banner > article {
 			-moz-transition: opacity 1.5s ease, visibility 1.5s;
