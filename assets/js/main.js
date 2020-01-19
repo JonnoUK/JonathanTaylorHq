@@ -141,8 +141,8 @@ var settings = {
 				i = 0;
 
 		// Turn off indicators if we only have one slide.
-			if ($slides.length == 1)
-				options.indicators = false;
+			//if ($slides.length == 1)
+			//	options.indicators = false;
 
 		// Functions.
 			$this._switchTo = function(x, stop) {
@@ -162,14 +162,14 @@ var settings = {
 				// Hide last slide.
 					slides[lastPos].removeClass('top');
 
-					if (options.indicators)
-						indicators[lastPos].removeClass('visible');
+					//if (options.indicators)
+						//indicators[lastPos].removeClass('visible');
 
 				// Show new slide.
 					slides[pos].addClass('visible').addClass('top');
 
-					if (options.indicators)
-						indicators[pos].addClass('visible');
+					//if (options.indicators)
+						//indicators[pos].addClass('visible');
 
 				// Finish hiding last slide after a short delay.
 					window.setTimeout(function() {
@@ -213,9 +213,9 @@ var settings = {
 						slides.push($slide);
 
 					// Indicators.
-						if (options.indicators) {
+						//if (options.indicators) {
 
-							var $indicator_li = $('<li>' + i + '</li>').appendTo($indicators);
+						//	var $indicator_li = $('<li>' + i + '</li>').appendTo($indicators);
 
 							// Indicator.
 								$indicator_li
@@ -237,8 +237,8 @@ var settings = {
 		// Initial slide.
 			slides[pos].addClass('visible').addClass('top');
 
-			if (options.indicators)
-				indicators[pos].addClass('visible');
+			//if (options.indicators)
+				//indicators[pos].addClass('visible');
 
 		// Bail if we only have a single slide.
 			if (slides.length == 1)
