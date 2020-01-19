@@ -188,8 +188,8 @@ var settings = {
 			};
 
 		// Indicators.
-			if (options.indicators)
-				$indicators = $('<ul class="indicators"></ul>').appendTo($this);
+			//if (options.indicators)
+				//$indicators = $('<ul class="indicators"></ul>').appendTo($this);
 
 		// Slides.
 			$slides
@@ -204,7 +204,7 @@ var settings = {
 						  var parts = imageSrc.split(".")
 						  imageSrc = parts[0] + "-small." + parts[1];
 						}
-				 
+
 						$slide
 							.css('background-image', 'url("' + imageSrc + '")')
 							.css('background-position', ($slide.data('position') ? $slide.data('position') : 'center'));
